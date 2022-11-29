@@ -1,0 +1,26 @@
+@api = http://localhost:3000/Grupos 
+
+
+### Consulta a un tabla en general
+GET {{api}}
+
+#### Inserción a una tabla 
+POST {{api}}
+Content-Type: application/json
+
+{
+    "F_ProgEd":2,
+    "F_Grupo":1,
+    "F_Cuatri": 1,
+    "Turno":"MATUTINO",
+    "Modalidad": "Online",
+    "Extra":"ggggh"
+    
+    
+}
+
+### Consulta por Id
+GET {{api}}/22
+
+### Eliminacion  
+DELETE {{api}}/27

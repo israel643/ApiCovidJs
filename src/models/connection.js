@@ -21,3 +21,5 @@ export async function SqlConnection(){
         console.error(err);
     }
 }
+
+export {sql};

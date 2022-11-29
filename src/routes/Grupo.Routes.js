@@ -1,15 +1,17 @@
 import { Router } from "express";
-import {getGrupos} from '../controllers/Grupo.Controller';
+import {getGrupos, NewInsercion, getGrupId, deletGrupId} from '../controllers/Grupo.Controller';
 
 const router = Router();
 
 router.get('/Grupos', getGrupos);
+// Obtención por Id
+router.get('/Grupos/:id', getGrupId);
+// Creacion de nuevos grupos 
+router.post('/Grupos', NewInsercion);
+// Eliminacion por Id
+router.delete('/Grupos/:id', deletGrupId);
 
-// router.post('/Grupos');
 
-// router.delete('/Grupos' );
-
-// router.put('/Grupos' );
 
 
 export default router
