@@ -1,6 +1,6 @@
 export const queries = {
     //Query's de la tabla GrupoCuatrimestre
-    getAllGrupsC: 'SELECT Turno, Modalidad, Extra FROM GrupoCuatrimestre',
+    getAllGrupsC: 'SELECT Id_GruCuat,F_ProgEd, F_Grupo, F_Cuatri,Turno, Modalidad, Extra FROM GrupoCuatrimestre',
 
     addNewGrupC: 'INSERT INTO GrupoCuatrimestre (F_ProgEd, F_Grupo, F_Cuatri, Turno, Modalidad, Extra) ' +
     'VALUES (@F_ProgEd, @F_Grupo, @F_Cuatri, @Turno, @Modalidad, @Extra);',
