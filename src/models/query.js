@@ -10,9 +10,9 @@ export const queries = {
     deleteGrupsC: 'DELETE FROM GrupoCuatrimestre WHERE	Id_GruCuat = @Id_GruCuat',
 
     //Query's de la tabla PositivoAlumno
-    getAllPositivoAlum: 'SELECT PosAl.ID_posAl, PosAl.FechaConfirmado, PosAl.Comprobacion, PosAl.Antecedentes, PosAl.Riesgo, PosAl.NumContagio, PosAl.Extra, Al.Matricula, Al.Nombre, Al.Matricula, Al.Ap_pat, Al.Ap_mat, Al.Genero FROM PositivoAlumno PosAl INNER JOIN Alumno Al ON PosAl.F_Alumno= Al.ID_Alumno ',
+    getAllPositivoAlum: 'SELECT PosAl.ID_posAl, PosAl.FechaConfirmado, PosAl.Comprobacion, PosAl.Antecedentes, PosAl.Riesgo, PosAl.NumContagio, PosAl.Extra, Al.Matricula, Al.Nombre, Al.Ap_pat, Al.Ap_mat, Al.Genero FROM PositivoAlumno PosAl INNER JOIN Alumno Al ON PosAl.F_Alumno= Al.ID_Alumno ',
 
-    getPositivosAlumByID: 'SELECT PosAl.ID_posAl, PosAl.FechaConfirmado, PosAl.Comprobacion, PosAl.Antecedentes, PosAl.Riesgo, PosAl.NumContagio, PosAl.Extra, Al.Matricula, Al.Nombre, Al.Matricula, Al.Ap_pat, Al.Ap_mat, Al.Genero FROM PositivoAlumno PosAl INNER JOIN Alumno Al ON PosAl.F_Alumno= Al.ID_Alumno WHERE ID_posAl = @ID_posAl;',
+    getPositivosAlumByID: 'SELECT PosAl.ID_posAl, PosAl.FechaConfirmado, PosAl.Comprobacion, PosAl.Antecedentes, PosAl.Riesgo, PosAl.NumContagio, PosAl.Extra, Al.Matricula, Al.Nombre, Al.Ap_pat, Al.Ap_mat, Al.Genero FROM PositivoAlumno PosAl INNER JOIN Alumno Al ON PosAl.F_Alumno= Al.ID_Alumno WHERE ID_posAl = @ID_posAl;',
 
     deletePositivoAlum: 'DELETE FROM PositivoAlumno WHERE	ID_posAl = @ID_posAl',
 
