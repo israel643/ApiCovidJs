@@ -10,26 +10,26 @@ export const queries = {
     deleteGrupsC: 'DELETE FROM GrupoCuatrimestre WHERE	Id_GruCuat = @Id_GruCuat',
 
     //Query's de la tabla PositivoAlumno
-    getAllPositivoAlum: 'select ID_posAl, FechaConfirmado, Comprobacion, Antecedentes, Riesgo, NumContagio, Extra,F_Alumno ' + 
-    'from PositivoAlumno;',
+    getAllPositivoAlum: 'SELECT ID_posAl, FechaConfirmado, Comprobacion, Antecedentes, Riesgo, NumContagio, Extra,F_Alumno ' + 
+    'FROM PositivoAlumno;',
 
-    getPositivosAlumByID: 'select ID_posAl, FechaConfirmado, Comprobacion, Antecedentes, Riesgo, NumContagio, Extra,F_Alumno ' +
+    getPositivosAlumByID: ' SELECT ID_posAl, FechaConfirmado, Comprobacion, Antecedentes, Riesgo, NumContagio, Extra,F_Alumno ' +
     'from PositivoAlumno WHERE ID_posAl = @ID_posAl;',
 
-    deletePositivoAlum: 'delete from PositivoAlumno WHERE	ID_posAl = @ID_posAl',
+    deletePositivoAlum: 'DELETE FROM PositivoAlumno WHERE	ID_posAl = @ID_posAl',
 
-    addNewPositivoAlumno: 'insert into PositivoAlumno ( FechaConfirmado, Comprobacion, Antecedentes, Riesgo, NumContagio, Extra, F_Alumno)' + 
-    'values (@FechaConfirmado, @Comprobacion, @Antecedentes, @Riesgo, @NumContagio, @Extra, @F_Alumno);',
+    addNewPositivoAlumno: 'INSERT INTO PositivoAlumno ( FechaConfirmado, Comprobacion, Antecedentes, Riesgo, NumContagio, Extra, F_Alumno)' + 
+    'VALUES (@FechaConfirmado, @Comprobacion, @Antecedentes, @Riesgo, @NumContagio, @Extra, @F_Alumno);',
 
     //Query's de la tabla SeguimientoAl
 
-    getAllSeguimientoAl: 'select  Id_Seguimiento,	F_PositivoAL,	F_medico,	Fecha,	Form_Comunica,	Reporte,	Entrevista,	Extra from SeguimientoAL',
+    getAllSeguimientoAl: 'SELECT  Id_Seguimiento,	F_PositivoAL,	F_medico,	Fecha,	Form_Comunica,	Reporte,	Entrevista,	Extra FROM SeguimientoAL',
 
-    getSeguimientoAlByID: 'select  Id_Seguimiento,	F_PositivoAL,	F_medico,	Fecha,	Form_Comunica,	Reporte,	Entrevista,	Extra from SeguimientoAL ' + 
+    getSeguimientoAlByID: 'SELECT  Id_Seguimiento,	F_PositivoAL,	F_medico,	Fecha,	Form_Comunica,	Reporte,	Entrevista,	Extra FROM SeguimientoAL ' + 
     'WHERE Id_Seguimiento = @Id_Seguimiento;',
 
     deleteSeguimientoAl: 'delete from SeguimientoAL WHERE	Id_Seguimiento = @Id_Seguimiento',
 
-    addNewSeguimientoAl: 'insert into SeguimientoAL (F_PositivoAL, F_medico, Fecha,	Form_Comunica, Reporte, Entrevista, Extra)' + 
-    ' values  ( @F_PositivoAL, @F_medico, @Fecha, @Form_Comunica, @Reporte, @Entrevista, @Extra);',
+    addNewSeguimientoAl: 'INSERT INTO SeguimientoAL (F_PositivoAL, F_medico, Fecha,	Form_Comunica, Reporte, Entrevista, Extra)' + 
+    ' VALUES  ( @F_PositivoAL, @F_medico, @Fecha, @Form_Comunica, @Reporte, @Entrevista, @Extra);',
 }

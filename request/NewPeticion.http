@@ -1,0 +1,25 @@
+@api = http://localhost:3000/AlumnosPositivos 
+
+
+### Consulta a un tabla en general
+GET {{api}}
+
+#### Inserción a una tabla 
+POST {{api}}
+Content-Type: application/json
+
+{
+    "FechaConfirmado": "2020-10-2",
+    "Comprobacion": "imagenes/webo.jpg",
+    "Antecedentes": "Bien",
+    "Riesgo": "Bajo",
+    "NumContagio": 1,
+    "Extra": "dsadas",
+    "F_Alumno": 1
+}
+
+### Consulta por Id
+GET {{api}}/1
+
+### Eliminacion  
+DELETE {{api}}/27
