@@ -14,7 +14,7 @@ export const queries = {
     'FROM PositivoAlumno;',
 
     getPositivosAlumByID: ' SELECT ID_posAl, FechaConfirmado, Comprobacion, Antecedentes, Riesgo, NumContagio, Extra,F_Alumno ' +
-    'from PositivoAlumno WHERE ID_posAl = @ID_posAl;',
+    'FROM PositivoAlumno WHERE ID_posAl = @ID_posAl;',
 
     deletePositivoAlum: 'DELETE FROM PositivoAlumno WHERE	ID_posAl = @ID_posAl',
 
@@ -28,7 +28,7 @@ export const queries = {
     getSeguimientoAlByID: 'SELECT  Id_Seguimiento,	F_PositivoAL,	F_medico,	Fecha,	Form_Comunica,	Reporte,	Entrevista,	Extra FROM SeguimientoAL ' + 
     'WHERE Id_Seguimiento = @Id_Seguimiento;',
 
-    deleteSeguimientoAl: 'delete from SeguimientoAL WHERE	Id_Seguimiento = @Id_Seguimiento',
+    deleteSeguimientoAl: ' DELETE FROM SeguimientoAL WHERE	Id_Seguimiento = @Id_Seguimiento',
 
     addNewSeguimientoAl: 'INSERT INTO SeguimientoAL (F_PositivoAL, F_medico, Fecha,	Form_Comunica, Reporte, Entrevista, Extra)' + 
     ' VALUES  ( @F_PositivoAL, @F_medico, @Fecha, @Form_Comunica, @Reporte, @Entrevista, @Extra);',
